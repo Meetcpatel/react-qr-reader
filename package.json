@@ -11,7 +11,9 @@
     "version": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "compile": "rm -rf lib && tsc -p .",
+    "prepare": "yarn compile"
   },
   "repository": {
     "type": "git",
